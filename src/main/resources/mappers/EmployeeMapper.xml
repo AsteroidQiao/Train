@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qiao.train.DAO.EmployeeDAO">
+
+    <select id="getAllEmp" resultType="com.qiao.train.po.Employee">
+        select *
+        from employee
+    </select>
+
+    <insert id="createEmp">
+        insert into employee
+        values (null, #{name}, #{gender}, #{age}, #{position}, #{major}, #{exp}, #{eduBg}, #{school}, #{phone},
+                #{email}, #{info})
+    </insert>
+
+    <delete id="deleteEmp">
+        delete
+        from employee
+        where id = #{id}
+    </delete>
+
+    <update id="updateEmp">
+        update employee set
+        <if test="name != null">
+            name = #{name},
+        </if>
+        <if test="gender != null">
+            gender = #{gender},
+        </if>
+        <if test="age != null">
+            age = #{age},
+        </if>
+        <if test="position != null">
+            position = #{position},
+        </if>
+        <if test="major != null">
+            major = #{major},
+        </if>
+        <if test="exp != null">
+            exp = #{exp},
+        </if>
+        <if test="eduBg != null">
+            eduBg = #{eduBg},
+        </if>
+        <if test="school != null">
+            school = #{school},
+        </if>
+        <if test="phone != null">
+            phone = #{phone},
+        </if>
+        <if test="email != null">
+            email = #{email},
+        </if>
+        <if test="info != null">
+            info = #{info},
+        </if>
+        id = id
+        <where>
+            id = #{id}
+        </where>
+    </update>
+</mapper>

@@ -1,0 +1,4 @@
+2022-03-10 21:08:03.288 [main] INFO  com.qiao.train.TrainApplication - Starting TrainApplication using Java 11.0.12 on ÇÇÓð with PID 13204 (D:\×ÀÃæ\Train (1)\target\classes started by QiaoYu in D:\×ÀÃæ\Train (1))
+2022-03-10 21:08:03.291 [main] DEBUG com.qiao.train.TrainApplication - Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-10 21:08:03.292 [main] INFO  com.qiao.train.TrainApplication - No active profile set, falling back to 1 default profile: "default"
+2022-03-10 21:08:04.721 [main] INFO  com.qiao.train.TrainApplication - Started TrainApplication in 2.646 seconds (JVM running for 3.983)
